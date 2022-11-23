@@ -1,0 +1,154 @@
+div.starter-liquid-totalizer {
+	padding: 15px;
+}
+
+div.starter-liquid-totalizer input[type="number"],
+div.starter-liquid-totalizer select {
+	margin-bottom: 0 !important;
+}
+
+span.slt-invalid-feedback {
+	padding-top: 4px;
+	color: rgb(199, 0, 0);
+	font-size: 0.8rem;
+	letter-spacing: 0.01rem;
+	display: block;
+	line-height: 14px;
+	opacity: 0;
+}
+
+div.slt-calculator {
+	width: 100%;
+	display: flex !important;
+	flex-direction: column;
+}
+
+div.slt-calculator div.slt-row {
+	width: 100%;
+	display: flex !important;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.slt-row div.slt-col {
+	width: 49%;
+	margin-bottom: 3px;
+}
+
+div.slt-first-col {
+	display: flex !important;
+	flex-direction: column;
+	align-items: start;
+}
+
+div.slt-first-col div div {
+	width: 75% !important;
+}
+
+div.slt-first-col-child {
+	width: 100%;
+	display: flex !important;
+	align-items: center;
+}
+
+div.slt-first-col select {
+	margin-top: 1.85rem !important;
+	width: 25% !important;
+	background-color: #176d56;
+	color: #fff;
+	border-color: #176d56;
+}
+
+div.slt-btn-row div.slt-col button {
+	background-color: #176d56 !important;
+	color: white !important;
+	text-transform: capitalize;
+	margin-right: 0 !important;
+}
+
+div.slt-btn-row div.slt-col button:hover {
+	background-color: #125745 !important;
+}
+
+div.slt-btn-row {
+	margin-top: 15px;
+}
+
+.slt-unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Starter Liquid Calculator Results */
+div.slt-results {
+	margin-top: 50px !important;
+}
+
+div.slt-results div.slt-row {
+	margin-top: 40px;
+}
+
+span.slt-comment-answer {
+	color: #176d56;
+	font-weight: 600;
+}
+
+div.slt-results {
+	display: none;
+}
+
+th.slt-thead-heads {
+	width: 25%;
+}
+
+@media only screen and (max-width: 425px) {
+	div.slt-row div.slt-col {
+		width: 100% !important;
+	}
+
+	div.slt-calculator div.slt-row {
+		flex-direction: column;
+	}
+
+	div.slt-first-col select {
+		margin-top: 1.8rem !important;
+		width: 30% !important;
+	}
+
+	div.slt-first-col div.slt-first-col-child div {
+		width: 70% !important;
+	}
+
+	div.slt-btn-row div.slt-col {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	div.slt-btn-row div.slt-col button {
+		width: 48%;
+	}
+
+	/* Starter Liquid Calculator Results */
+	div.slt-results {
+		margin-top: 20px !important;
+	}
+
+	div.slt-results div.slt-row {
+		margin-top: 25px;
+	}
+}
+
+@media only screen and (min-width: 767px) {
+	div.slt-btn-row div.slt-col button#SLT_Reset_Btn {
+		margin-left: 10px;
+	}
+
+	div.slt-btn-row div.slt-col button {
+		width: 120px;
+	}
+}
